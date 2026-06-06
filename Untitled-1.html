@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechTalk Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-info fs-3" href="#">TechTalk</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link active text-uppercase" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="#">Articles</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="#">Tutorials</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="#">About</a></li>
+                    <li class="nav-item">
+                        <button class="nav-link btn btn-outline-info ms-lg-3 px-4 fw-bold text-white" data-bs-toggle="modal" data-bs-target="#subscribeModal">
+                            Subscribe
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="blogCarousel" class="carousel slide shadow-sm mb-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#blogCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#blogCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#blogCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://placehold.co/1200x400/212529/ffffff?text=The+Future+of+AI+in+Web+Development" class="d-block w-100" alt="AI in Web Dev">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-4">
+                    <h2 class="display-5 fw-bold text-warning">The Future of AI</h2>
+                    <p class="lead mb-0">Discover how AI is shaping the tools we use to build the web.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://placehold.co/1200x400/0d6efd/ffffff?text=Mastering+Bootstrap+5" class="d-block w-100" alt="Bootstrap 5">
+                <div class="carousel-caption d-none d-md-block bg-primary bg-opacity-75 rounded p-4">
+                    <h2 class="display-5 fw-bold text-white">Mastering Bootstrap 5</h2>
+                    <p class="lead mb-0">Learn to build responsive, mobile-first sites quickly and effectively.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://placehold.co/1200x400/198754/ffffff?text=Green+Hosting+Solutions" class="d-block w-100" alt="Green Hosting">
+                <div class="carousel-caption d-none d-md-block bg-success bg-opacity-75 rounded p-4">
+                    <h2 class="display-5 fw-bold text-white">Eco-Friendly Web</h2>
+                    <p class="lead mb-0">How sustainable coding and hosting can reduce your carbon footprint.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#blogCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#blogCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container mb-5">
+        <h2 class="fw-bold mb-4 border-bottom border-info border-3 pb-2 d-inline-block">Latest Insights</h2>
+        
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0 bg-white">
+                    <img src="https://placehold.co/400x250/e9ecef/6c757d?text=CSS+Grid" class="card-img-top" alt="CSS Grid">
+                    <div class="card-body d-flex flex-column">
+                        <div><span class="badge bg-danger mb-2">HOT</span></div>
+                        <h5 class="card-title fw-bold">Mastering CSS Grid Layouts</h5>
+                        <p class="text-muted small mb-2"><i class="bi bi-calendar"></i> Nov 12, 2024</p>
+                        <p class="card-text mb-auto">A comprehensive guide to building complex, responsive layouts with ease using CSS Grid.</p>
+                        <a href="#" class="btn btn-outline-primary mt-3 mt-auto">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-info bg-info bg-opacity-10">
+                    <img src="https://placehold.co/400x250/e9ecef/6c757d?text=React+Performance" class="card-img-top" alt="React">
+                    <div class="card-body d-flex flex-column">
+                        <div><span class="badge bg-primary mb-2">Frameworks</span></div>
+                        <h5 class="card-title fw-bold">Optimizing React Apps</h5>
+                        <p class="text-muted small mb-2"><i class="bi bi-calendar"></i> Nov 08, 2024</p>
+                        <p class="card-text mb-auto">Learn techniques for reducing render times and improving the overall user experience.</p>
+                        <a href="#" class="btn btn-outline-info text-dark mt-3 mt-auto fw-bold border-2">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+         <nav aria-label="Blog pagination" class="mt-5">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+              </li>
+              <li class="page-item active"><a class="page-link bg-info border-info" href="#">1</a></li>
+              <li class="page-item"><a class="page-link text-info" href="#">2</a></li>
+              <li class="page-item"><a class="page-link text-info" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link text-info" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+    </div>
+
+    <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white border-bottom border-info border-3">
+                    <h5 class="modal-title fw-bold" id="subscribeModalLabel">Subscribe to TechTalk</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-light">
+                    <p class="lead fs-6 mb-3">Don't miss out on the latest tech insights! Join our newsletter.</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="subscriberName" class="form-label fw-bold text-secondary">Full Name</label>
+                            <input type="text" class="form-control border-secondary" id="subscriberName" placeholder="John Doe">
+                        </div>
+                        <div class="mb-3">
+                            <label for="subscriberEmail" class="form-label fw-bold text-secondary">Email address</label>
+                            <input type="email" class="form-control border-secondary" id="subscriberEmail" placeholder="name@example.com">
+                            <div class="form-text text-muted fst-italic">We'll never share your email with anyone else.</div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer bg-white">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-info text-white fw-bold">Subscribe Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-center text-lg-start mt-auto py-4 border-top border-info border-3">
+        <div class="container text-center">
+            <span class="text-light opacity-75">© 2026 TechTalk Blog. Designed using <span class="fw-bold text-info">Bootstrap 5</span>.</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

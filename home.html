@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaitanya Sutar | Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-info fs-3" href="index.html">Chaitanya Sutar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link active text-uppercase" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="skills.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="contact us.html">Contact Us</a></li>
+                    <li class="nav-item">
+                        <button class="nav-link btn btn-outline-info ms-lg-3 px-4 fw-bold text-white" data-bs-toggle="modal" data-bs-target="#subscribeModal">
+                            Subscribe
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="homeCarousel" class="carousel slide shadow-sm mb-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://placehold.co/1200x500/212529/ffffff?text=Computer+Engineering" class="d-block w-100" alt="Engineering">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-4">
+                    <h2 class="display-5 fw-bold text-info">Computer Engineering</h2>
+                    <p class="lead mb-0">Building the future line by line.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://placehold.co/1200x500/0d6efd/ffffff?text=Gaming+%26+Tech" class="d-block w-100" alt="Gaming">
+                <div class="carousel-caption d-none d-md-block bg-primary bg-opacity-75 rounded p-4">
+                    <h2 class="display-5 fw-bold text-white">Gaming & Tech Enthusiast</h2>
+                    <p class="lead mb-0">Exploring virtual worlds and cutting-edge hardware.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://placehold.co/1200x500/198754/ffffff?text=Leadership+%26+Vision" class="d-block w-100" alt="Leadership">
+                <div class="carousel-caption d-none d-md-block bg-success bg-opacity-75 rounded p-4">
+                    <h2 class="display-5 fw-bold text-white">Leadership</h2>
+                    <p class="lead mb-0">Guiding teams to achieve exceptional results.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+
+    <div class="container text-center mb-5 p-5 bg-white shadow-sm rounded border-top border-info border-4">
+        <h1 class="display-4 fw-bold text-dark mb-3">Hello, I'm Chaitanya Sutar</h1>
+        <p class="lead fs-3 text-secondary fst-italic mb-4">Computer Engineering Student & Tech Enthusiast</p>
+        <p class="col-md-8 mx-auto text-muted">
+            Welcome to my personal hub! I am passionate about crafting beautiful web experiences using HTML, CSS, and Python. When I'm not coding, you can find me diving deep into the latest gaming trends or exploring new technological advancements. I strongly believe in continuous learning and leading by example.
+        </p>
+        <a href="skills.html" class="btn btn-info btn-lg fw-bold text-dark mt-3">Explore My Skills</a>
+    </div>
+
+    <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-info border-2">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title fw-bold" id="subscribeModalLabel">Stay Updated!</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-light">
+                    <p class="lead fs-6 mb-3">Subscribe for the latest updates on Tech, Gaming, and my coding journey!</p>
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label fw-bold text-secondary">Email address</label>
+                            <input type="email" class="form-control border-secondary" placeholder="name@example.com">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer bg-white">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-info text-dark fw-bold">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-center py-4 border-top border-info border-3">
+        <span class="text-light opacity-75">© 2026 Chaitanya Sutar. Designed with Bootstrap 5.</span>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
